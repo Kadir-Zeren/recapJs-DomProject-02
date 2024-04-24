@@ -24,7 +24,7 @@
     </header>
 
     <main class="container" style="max-width: 800px">
-      <form action="" class="d-flex">
+      <form action="" class="d-flex gap-2">
         <input
           id="gelir-input"
           class="form-control"
@@ -67,6 +67,48 @@
           <button type="submit" class="btn btn-warning">Sign in</button>
         </div>
       </form>
+
+      <table
+        id="harcama-tablosu"
+        class="table table-bordered table-hover table-striped mt-4 text-center"
+      >
+        <thead>
+          <tr>
+            <th scope="col" class="w-25">Tarih</th>
+            <th scope="col" class="w-50">Harcama Alani</th>
+            <th scope="col">Miktar (Tl)</th>
+            <th scope="col">Islem</th>
+          </tr>
+        </thead>
+        <tbody id="harcama-body">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr> -->
+        </tbody>
+      </table>
+
+      <table
+        id="sonuc-tablosu"
+        class="table table-bordered table-hover table-striped mt-4 text-center w-50 ms-auto"
+      >
+        <tbody class="text-end">
+          <tr>
+            <th>Geliriniz:</th>
+            <td id="geliriniz">0</td>
+          </tr>
+          <tr>
+            <th>Gideriniz:</th>
+            <td id="gideriniz">0</td>
+          </tr>
+          <tr>
+            <th>Kalan:</th>
+            <td id="kalan">0</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
     <script src="app.js"></script>
